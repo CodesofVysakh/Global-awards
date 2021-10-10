@@ -1,38 +1,171 @@
-.App {
-  text-align: center;
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	background: transparent;
+	font-weight: normal;
+	text-decoration: none;
+	outline: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+ol, ul {
+	list-style: none;
+}
+del {
+	text-decoration: line-through;
+}
+body {
+	font-family:  'gorditaregular',Arial, Helvetica, sans-serif;
+	font-size: 17px;
+	color: #5B5A5D;
+	overflow-x: hidden;
+	min-width: 320px;
+	font-weight: 400;
+  background-color: #141414;
+}
+input,textarea,select{
+	font-family:  'gorditaregular',Arial, Helvetica, sans-serif;
+	font-weight: 400;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a{
+	color: #1C2C40;
+}
+a:hover,.submit:hover{
+	filter: alpha(opacity = 85);
+	-moz-opacity: 0.85;
+	-khtml-opacity: 0.85;
+	opacity: 0.85;
+}
+img{
+	display: block;
+	width:100%;
+}
+p{
+	line-height:1.6em;
+	font-size: 16px;
+	font-family:  'gorditarmedium',Arial;
+	font-weight: 400;
+}
+.hidden{
+	display:none;
+}
+.wrapper {
+	width: 90%;
+	margin: 0 auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+@font-face {
+  font-family: 'gorditablack_italic';
+  src: url('./assets/fonts/gordita_black_italic-webfont.woff2') format('woff2'),
+       url('./assets/fonts/gordita_black_italic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
+@font-face {
+  font-family: 'gorditablack';
+  src: url('./assets/fonts/gordita_black-webfont.woff2') format('woff2'),
+       url('./assets/fonts/gordita_black-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 
-.App-link {
-  color: #61dafb;
 }
+@font-face {
+  font-family: 'gorditabold_italic';
+  src: url('./assets/fonts/gordita_bold_italic-webfont.woff2') format('woff2'),
+       url('./assets/fonts/gordita_bold_italic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+@font-face {
+  font-family: 'gorditabold';
+  src: url('./assets/fonts/gordita_bold-webfont.woff2') format('woff2'),
+       url('./assets/fonts/gordita_bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+@font-face {
+  font-family: 'gorditalight_italic';
+  src: url('./assets/fonts/gordita_light_italic-webfont.woff2') format('woff2'),
+       url('./assets/fonts/gordita_light_italic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+@font-face {
+  font-family: 'gorditalight';
+  src: url('./assets/fonts/gordita_light-webfont.woff2') format('woff2'),
+       url('./assets/fonts/gordita_light-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+@font-face {
+  font-family: 'gorditamedium_italic';
+  src: url('./assets/fonts/gordita_medium_italic-webfont.woff2') format('woff2'),
+       url('./assets/fonts/gordita_medium_italic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+@font-face {
+  font-family: 'gorditamedium';
+  src: url('./assets/fonts/gordita_medium-webfont.woff2') format('woff2'),
+       url('./assets/fonts/gordita_medium-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+@font-face {
+  font-family: 'gorditaregular_italic';
+  src: url('./assets/fonts/gordita_regular_italic-webfont.woff2') format('woff2'),
+       url('./assets/fonts/gordita_regular_italic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+@font-face {
+  font-family: 'gorditaregular';
+  src: url('./assets/fonts/gordita_regular-webfont.woff2') format('woff2'),
+       url('./assets/fonts/gordita_regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+@font-face {
+  font-family: 'gorditathin_italic';
+  src: url('./assets/fonts/gordita_thin_italic-webfont.woff2') format('woff2'),
+       url('./assets/fonts/gordita_thin_italic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+@font-face {
+  font-family: 'gorditathin';
+  src: url('./assets/fonts/gordita_thin-webfont.woff2') format('woff2'),
+       url('./assets/fonts/gordita_thin-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+@font-face {
+  font-family: 'gorditaultra_italic';
+  src: url('./assets/fonts/gordita_ultra_italic-webfont.woff2') format('woff2'),
+       url('./assets/fonts/gordita_ultra_italic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+@font-face {
+  font-family: 'gorditaultra';
+  src: url('./assets/fonts/gordita_ultra-webfont.woff2') format('woff2'),
+       url('./assets/fonts/gordita_ultra-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
