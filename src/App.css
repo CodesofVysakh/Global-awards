@@ -56,6 +56,7 @@ p{
 .wrapper {
 	width: 90%;
 	margin: 0 auto;
+  max-width: 1280px;
 }
 
 @font-face {
@@ -168,4 +169,39 @@ p{
        url('./assets/fonts/gordita_ultra-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+}
+
+.navBar {
+  position: relative;
+}
+
+.navBar button {
+  position: fixed;
+  left: 40px;
+  top: 40px;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.menuNav {
+  overflow-y: scroll;
+  list-style: none;
+  position: fixed;
+  top: 0;
+  background: darkcyan;
+  left: 0;
+  bottom: 0;
+  height: 100vh;
+  width: 0;
+  overflow: hidden;
+  max-width: 290px;
+  z-index: 9;
+}
+
+.menuNav.showMenu {
+  width: 100%;
+}
+
+.menuNav li:first-child {
+  margin-top: 7rem;
 }
